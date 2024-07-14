@@ -1,0 +1,127 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    
+  }
+
+  body{
+    height: 100vh;
+    background-color: #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img{
+    border-radius: 50%;
+    margin-left: 50px;
+    
+    background:linear-gradient(#9bd5ce,#c0d7ecee);
+    height: 160px;
+    
+  }
+
+  .skills{
+    width: 250px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    background:linear-gradient(#01fe16,#c2c2c2);
+    box-shadow: 0 15px 20px #00000027,0 -5px 5px #00000027;
+  }
+
+
+  
+  .skills ul {
+    list-style: none;
+  }
+  
+  .skills ul li {
+  margin: 20px 0;
+  }
+  
+  .skills .barras{
+    background-color: #ccc;
+    display: block;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .barras > .hp{
+    height: 20px;
+    background:linear-gradient(to right,#01fe16,hsl(150, 87%, 15%));
+    position: absolute;
+    
+  }
+  .barras > .ataque{
+    height: 20px;
+    background: linear-gradient(to right,#540707, #c80808);
+    position: absolute;
+  }
+
+  .barras > .defesa{
+    height: 20px;
+    background:linear-gradient(to right,#1f01fe,hsl(196, 94%, 43%));
+    position: absolute;
+    
+  }
+  .barras > .supAtaque{
+    height: 20px;
+    background:linear-gradient(to right,#fe0e01,hsl(11, 86%, 62%));
+    position: absolute;
+    
+  }
+  .barras > .supDefesa{
+    height: 20px;
+    background:linear-gradient(to right,#011ffe6e,hsl(219, 95%, 15%));
+    position: absolute;
+    
+  }
+  .barras > .velocidade{
+    height: 20px;
+    background:linear-gradient(to right,#839702,hsl(47, 94%, 43%));
+    position: absolute;
+    
+  }
+
+
+  
+  .hp {
+    width: 45%;
+    animation: forca 3s;
+    
+  }
+  .ataque {
+    width: 49%;
+    animation: forca 3s;
+  }
+  .defesa {
+    width: 49%;
+    animation: forca 3s;
+  }
+  .supAtaque {
+    width: 65%;
+    animation: forca 3s;
+  }
+  .supDefesa {
+    width: 65%;
+    animation: forca 3s;
+  }
+  .velocidade {
+    width: 45%;
+    animation: forca 3s;
+  }
+  
+  /* colocando animação*/
+  @keyframes .hp{
+    0%{
+      widht:0%
+    }
+    100%{
+      width: 80%
+    }
+}
