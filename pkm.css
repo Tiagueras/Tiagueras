@@ -92,36 +92,76 @@
   
   .hp {
     width: 45%;
-    animation: forca 3s;
+    animation: hp 3s;
     
   }
   .ataque {
     width: 49%;
-    animation: forca 3s;
+    animation: ataque 3s;
   }
   .defesa {
     width: 49%;
-    animation: forca 3s;
+    animation: defesa 3s;
   }
   .supAtaque {
     width: 65%;
-    animation: forca 3s;
+    animation: supAtaque 3s;
   }
   .supDefesa {
     width: 65%;
-    animation: forca 3s;
+    animation: supDefesa 3s;
   }
   .velocidade {
     width: 45%;
-    animation: forca 3s;
+    animation: velocidade 3s;
   }
   
   /* colocando animação*/
-  @keyframes .hp{
+  @keyframes hp{
     0%{
-      widht:0%
+      width:0%;
     }
     100%{
-      width: 80%
+      width: 45%;
     }
-}
+  }
+  @keyframes ataque{
+    0%{
+      width:0%;
+    }
+    100%{
+      width: 49%;
+    }
+  }
+  @keyframes defesa{
+    0%{
+      width:0%;
+    }
+    100%{
+      width: 49%;
+    }
+  }
+  @keyframes supAtaque{
+    0%{
+      width:0%;
+    }
+    100%{
+      width: 65%;
+    }
+  }
+  @keyframes supDefesa{
+    0%{
+      width:0%;
+    }
+    100%{
+      width: 65%
+    }
+  }
+  @keyframes velocidade{
+    0%{
+      width:0%;
+    }
+    100%{
+      width: 45%;
+    }
+  }
